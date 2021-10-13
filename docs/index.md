@@ -57,6 +57,7 @@ The last scene you will be taken down to if you choose the wrong lever is just f
 2.Making the aunt in the “Choose wisely” layer a 3D figure that hovers up and down to give off a floating effect would have been nice, as well as making it clear that the figure is indeed your aunt.
 3.Hiding the coins better around the space in the first layer of hell to make it more challenging would have possibly made the experience more immersive.
 
+
 Overall, I’m happy with what we were able to accomplish in the amount of time we had, and I’m glad I was pushed to learn more about unity and scripting through this project. I’m very excited to make a more elaborate environment in Project 3.
 
 
