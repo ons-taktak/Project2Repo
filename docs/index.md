@@ -12,7 +12,7 @@ Video of First phase of slot machine: [link to video]( https://youtu.be/j9O1qaUJ
 ### Second Stage
 The second stage was adding the locomotion. I ended up doing it but for some reason when I did it clicking on the floor would result in the view being lower than it should be.  This may have had something to do with the scale. However, we just ended up having to delete the locomotion done on my scene when importing it and meshing it with Ons’. She managed to re-do it and it worked. At the start all the coins worked when dropping it into the money box. After meshing it with Ons’  scene I believe some of the things that were enabled became disabled. We tried to figure it out together but kept getting stuck so with some extra help we managed to get it working in one unity project.
 
-![This is an image](alia1.png)
+![This is an image](alia1.jpg)
 ![This is an image](alia2.png)
 
 ### Final Stage: User testing
@@ -51,7 +51,8 @@ The last scene you will be taken down to if you choose the wrong lever is just f
 
 ![This is an image](ons6.png)
 
-###Things I would have liked to add:
+### Things I would have liked to add:
+
 	- I definitely believe that more storytelling components would have made the project a lot cooler
 	- Making the aunt in the “Choose wisely” layer a 3D figure that hovers up and down to give off a floating effect would have been nice, as well as making it clear that the figure is indeed your aunt.
 	- Hiding the coins better around the space in the first layer of hell to make it more challenging would have possibly made the experience more immersive.
