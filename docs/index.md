@@ -12,7 +12,7 @@ Here's a link to a [video of the first phase of slot machine.]( https://youtu.be
 ### Second Stage
 The second stage was adding the locomotion. I ended up doing it but for some reason when I did it clicking on the floor would result in the view being lower than it should be.  This may have had something to do with the scale. However, we just ended up having to delete the locomotion done on my scene when importing it and meshing it with Ons’. She managed to re-do it and it worked. At the start all the coins worked when dropping it into the money box. After meshing it with Ons’  scene I believe some of the things that were enabled became disabled. We tried to figure it out together but kept getting stuck so with some extra help we managed to get it working in one unity project.
 
-![This is an image](https://github.com/ons-taktak/Project2Repo/blob/7c551ae9f7ba17137a14c8f6eb5cd373dd4718e7/docs/alia1.jpg)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/alia1.jpg)
 ![This is an image](alia2.png)
 
 ### Final Stage: User testing
