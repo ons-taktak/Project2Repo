@@ -13,7 +13,7 @@ Here's a link to a [video of the first phase of slot machine.]( https://youtu.be
 The second stage was adding the locomotion. I ended up doing it but for some reason when I did it clicking on the floor would result in the view being lower than it should be.  This may have had something to do with the scale. However, we just ended up having to delete the locomotion done on my scene when importing it and meshing it with Ons’. She managed to re-do it and it worked. At the start all the coins worked when dropping it into the money box. After meshing it with Ons’  scene I believe some of the things that were enabled became disabled. We tried to figure it out together but kept getting stuck so with some extra help we managed to get it working in one unity project.
 
 ![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/alia1.jpg)
-![This is an image](alia2.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/alia2.png)
 
 ### Final Stage: User testing
 At this point Ons and I worked together to identify problems when user testing back and forth and made discussions on changes that should be made. I created the final touches of the models used for the user interface like the arrows, text, and aunt model. I also created the sound used for the project both the voice of Satan and the Aunt. Ons worked on putting the elements of the last layer together.
@@ -22,13 +22,13 @@ At this point Ons and I worked together to identify problems when user testing b
 ### Process
 I first started working on the intro layer. After importing the scene model Alia made, the first thing I decided to do was create a dissolve effect (or a reverse dissolve?) for the paper to appear. I followed a tutorial on Shaders to be able to do this. It was done using ‘Simple Noise’ and ‘Add’ nodes that were connected to the alpha clip threshold, along with other things to make the border a glowing orange-red color as well.
 
-![This is an image](ons1.png)
-![This is an image](ons2.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/ons1.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/ons2.png)
 
 Once the animation was done, I just added a script for it that incorporates a coroutine which basically enables the animation to start after some waiting time. A lot of other functionalities are added to this same script later for the fingerprint stamping. <br/>
 The next thing I worked on was the fire which was achieved using a particle system. The script for this was pretty straight forward (disregarding the simple mistake I made that took us several days to figure out haha sorry), it just contains a coroutine that has some waiting time after which the fire starts and some active time after which the fire is turned off, at which stage the document is then also set to appear.
 
-![This is an image](ons3.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/ons3.png)
 
 Some rescaling had to be done at this point as well, because we realized as we were testing these first few functionalities that the scale of the models was way too big compared to a regular person. <br/>
 Then I moved on to stamping the fingerprint. To do this, I followed the interactions lab to make a slightly transparent bloody fingerprint follow the ray cast on the document. However, upon selection, its position would be fixed and its opacity will be turned all the way up to create a stamping effect. Some boolean flags were used here to ensure that these actions weren’t possible before the document fully appears, etc…
@@ -37,19 +37,19 @@ All of this I believe was done through functions that would trigger coroutines.
 After both Alia and I mostly finished these first two scenes (and after a lot of debugging with Professor (thank you!)), we tried merging them together. As Alia already mentioned, some things stopped working correctly and had to fixed, and I also had to re-do the navigation. <br/>
 I also took the time to design a reticle by following a tutorial on YouTube that used both a shader and a particle system.
 
-![This is an image](ons4.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/ons4.png)
 
 At this point, I also decided it was time to fix the visuals for the interactions and make everything work smoother. So I added the left and right hand controller visuals. I kept the left hand as a ray cast interactor, and I made the right hand a direct one. I set all the teleportation areas, and all the layers and tags, and then we were finally ready to move on to the next layer of hell. <br/>
 I set up the same XR Rig drop after the final coin in Alia’s scene, and we kept the final layer pretty simple. You have two levers and you have to choose wisely. 
 
-![This is an image](ons5.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/ons5.png)
 
 There is a small hint on how you can figure out which lever is the correct one. The one on your left, you have to slide down meaning it will take you to the last layer of hell where you’ll be stuck. The one on the right you have to slide forward/up representing the fact that you will be taken up to the real world again after hearing the secret. To do this, I just added an if condition inside the OnSelectExited function already existing in the LinearFixture script. It checks if the lever position matches the end position, and if so starts the same coroutine I have been using to move the XR Rig. <br/>
 Next, I just added the audio files on unity as audio sources, and I used Play() and Stop() in the scripts to trigger them when needed. <br/>
 The last thing I did was just trying to make the scene look better, by moving stuff around, adding materials, colors, walls around the layers, etc..
 The last scene you will be taken down to if you choose the wrong lever is just fire surrounding you. Also, the colors of the layers are supposed to be getting more red as you move down but I’m not sure if that ended up being clear or not.
 
-![This is an image](ons6.png)
+![This is an image](https://media.githubusercontent.com/media/ons-taktak/Project2Repo/main/docs/ons6.png)
 
 ### Things I would have liked to add:
 
